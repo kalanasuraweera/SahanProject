@@ -1,1 +1,37 @@
-<mat-toolbar>Sahan's App</mat-toolbar>
+<!--header-->
+<mat-toolbar class="mat-toolbar">
+  <button class="mat-icon-button" (click)="toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  Sahan's App
+  <span class="spacer"></span>
+  <button class="mat-icon-button" >
+    <mat-icon>account_circle</mat-icon>
+  </button>
+</mat-toolbar>
+<!--main content container-->
+<mat-sidenav-container class="side-nav-container">
+<!--  menu items-->
+  <mat-sidenav [position]="'start'" [mode]="'push'"  class="side-nav" [opened]="isOpen">
+    <mat-accordion>
+      <mat-expansion-panel class="mat-expansion-panel">
+        <!-- #enddocregion hide-toggle -->
+        <mat-expansion-panel-header class="mat-expansion-panel-header">
+          <mat-panel-title class="mat-expansion-panel-header-title">
+            Analyse
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+      <mat-expansion-panel class="mat-expansion-panel">
+        <!-- #enddocregion hide-toggle -->
+        <mat-expansion-panel-header class="mat-expansion-panel-header">
+          <mat-panel-title class="mat-expansion-panel-header-title">
+            Setup
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-sidenav>
+<!--  main content-->
+  <mat-sidenav-content>Main content</mat-sidenav-content>
+</mat-sidenav-container>
