@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl} from '@angular/forms';
+import {FormControl, Validators} from '@angular/forms';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
@@ -9,11 +9,11 @@ import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 })
 export class AddNewProductComponent implements OnInit {
 
+  productCode = new FormControl('', Validators.required);
+  productName = new FormControl('', Validators.required);
+
   constructor(public dialogRef: MatDialogRef<AddNewProductComponent>) {
   }
-
-  productCode = new FormControl('');
-  productName = new FormControl('');
 
   ngOnInit(): void {
   }
@@ -23,7 +23,9 @@ export class AddNewProductComponent implements OnInit {
   }
 
   submit(): void {
-    console.log('product code = ' + this.productCode.value);
-    console.log('product name - ' + this.productName.value);
+    if (this.productCode.valid && this.productName.valid) {
+      console.log('product code = ' + this.productCode.value);
+      console.log('product name - ' + this.productName.value);
+    }
   }
 }
