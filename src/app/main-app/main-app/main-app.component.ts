@@ -26,5 +26,6 @@ export class MainAppComponent implements OnInit {
 
   handleModuleTypeSelection(moduleType: MODULE_TYPE) {
     this.mainAppService.updateSelectedModule(moduleType);
+    this.isOpen = false;
   }
 }
