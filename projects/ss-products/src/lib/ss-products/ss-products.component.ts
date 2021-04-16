@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product} from '../product-models';
 import {SsProductsService} from '../ss-products.service';
+import {MatDialog} from '@angular/material/dialog';
+import {AddNewProductComponent} from '../add-new-product/add-new-product.component';
 
 @Component({
   selector: 'ss-ss-products',
@@ -12,7 +14,8 @@ export class SsProductsComponent implements OnInit {
   loadedProducts: Product[];
   displayedColumns: string[] = ['code', 'name'];
 
-  constructor(private ssProductsService: SsProductsService) { }
+  constructor(private ssProductsService: SsProductsService, private dialog: MatDialog) {
+  }
 
   ngOnInit(): void {
     this.reloadProductList();
@@ -24,6 +27,12 @@ export class SsProductsComponent implements OnInit {
         subscription.unsubscribe();
         this.loadedProducts = result;
       }
+    });
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(AddNewProductComponent, {
+      width: '300px'
     });
   }
 
