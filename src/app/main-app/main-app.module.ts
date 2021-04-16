@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { MainAppComponent } from './main-app/main-app.component';
 
 
@@ -9,7 +10,8 @@ import { MainAppComponent } from './main-app/main-app.component';
     MainAppComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatToolbarModule
   ]
 })
 export class MainAppModule { }
