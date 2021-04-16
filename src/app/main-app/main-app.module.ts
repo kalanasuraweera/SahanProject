@@ -5,6 +5,7 @@ import { MainAppComponent } from './main-app/main-app.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {SsProductsModule} from '../../../projects/ss-products/src/lib/ss-products.module';
 
 
 
@@ -17,7 +18,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatSidenavModule,
     MatExpansionModule,
-    MatToolbarModule
+    MatToolbarModule,
+    SsProductsModule
   ]
 })
 export class MainAppModule { }

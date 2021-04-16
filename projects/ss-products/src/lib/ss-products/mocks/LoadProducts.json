@@ -1,0 +1,25 @@
+{
+  "status": 1,
+  "data": [
+    {
+      "productCode": "PANTS",
+      "productName": "Pants"
+    },
+    {
+      "productCode": "SHIRT",
+      "productName": "Shirts"
+    },
+    {
+      "productCode": "TROSR",
+      "productName": "Trousers"
+    },
+    {
+      "productCode": "SKIRT",
+      "productName": "Skirts"
+    },
+    {
+      "productCode": "TIE",
+      "productName": "Ties"
+    }
+  ]
+}
