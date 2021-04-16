@@ -12,6 +12,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "paths": {
+      "ss-products": [
+        "dist/ss-products/ss-products",
+        "dist/ss-products"
+      ]
+    },
     "lib": [
       "es2018",
       "dom"
