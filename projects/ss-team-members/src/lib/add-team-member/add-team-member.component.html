@@ -1,0 +1,18 @@
+<div class="mat-dialog-title">Add new team member</div>
+<div class="mat-dialog-container">
+  <form>
+    <mat-form-field color="accent" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput [formControl]="memberName">
+    </mat-form-field>
+    <mat-form-field color="accent" appearance="outline">
+      <mat-label>EPF</mat-label>
+      <input matInput (blur)="transform()" [formControl]="epf">
+    </mat-form-field>
+  </form>
+</div>
+<mat-dialog-actions>
+  <button mat-button (click)="close()">Cancel</button>
+  <button mat-button (click)="submit()">Save</button>
+</mat-dialog-actions>
+

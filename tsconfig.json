@@ -21,6 +21,10 @@
         "dist/ss-root-cause/ss-root-cause",
         "dist/ss-root-cause"
       ],
+      "ss-team-members": [
+        "dist/ss-team-members/ss-team-members",
+        "dist/ss-team-members"
+      ],
       "ss-teams": [
         "dist/ss-teams/ss-teams",
         "dist/ss-teams"

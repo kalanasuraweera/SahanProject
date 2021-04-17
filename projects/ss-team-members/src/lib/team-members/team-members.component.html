@@ -1,0 +1,19 @@
+<div class="module-heading">
+  <h1>Teams</h1>
+</div>
+<table mat-table [dataSource]="loadedTeamMembers" class="mat-elevation-z10 main-table">
+  <ng-container matColumnDef="memberName">
+    <th mat-header-cell *matHeaderCellDef> Member Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.memberName}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EPF">
+    <th mat-header-cell *matHeaderCellDef> EPF </th>
+    <td mat-cell *matCellDef="let element"> {{element.EPF | currency}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<div class="module-btn">
+  <button class="mat-raised-button" mat-button (click)="openDialog()">Add New</button>
+</div>

@@ -8,6 +8,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {SsProductsModule} from '../../../projects/ss-products/src/lib/ss-products.module';
 import {SsTeamsModule} from '../../../projects/ss-teams/src/lib/ss-teams.module';
 import {SsRootCauseModule} from '../../../projects/ss-root-cause/src/lib/ss-root-cause.module';
+import {SsTeamMembersModule} from '../../../projects/ss-team-members/src/lib/ss-team-members.module';
 
 
 
@@ -23,7 +24,8 @@ import {SsRootCauseModule} from '../../../projects/ss-root-cause/src/lib/ss-root
     MatToolbarModule,
     SsProductsModule,
     SsTeamsModule,
-    SsRootCauseModule
+    SsRootCauseModule,
+    SsTeamMembersModule
   ]
 })
 export class MainAppModule { }
