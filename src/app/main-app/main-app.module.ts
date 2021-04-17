@@ -9,6 +9,7 @@ import {SsProductsModule} from '../../../projects/ss-products/src/lib/ss-product
 import {SsTeamsModule} from '../../../projects/ss-teams/src/lib/ss-teams.module';
 import {SsRootCauseModule} from '../../../projects/ss-root-cause/src/lib/ss-root-cause.module';
 import {SsTeamMembersModule} from '../../../projects/ss-team-members/src/lib/ss-team-members.module';
+import {SsModulesModule} from '../../../projects/ss-modules/src/lib/ss-modules.module';
 
 
 
@@ -25,7 +26,8 @@ import {SsTeamMembersModule} from '../../../projects/ss-team-members/src/lib/ss-
     SsProductsModule,
     SsTeamsModule,
     SsRootCauseModule,
-    SsTeamMembersModule
+    SsTeamMembersModule,
+    SsModulesModule
   ]
 })
 export class MainAppModule { }

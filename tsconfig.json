@@ -13,6 +13,10 @@
     "target": "es2015",
     "module": "es2020",
     "paths": {
+      "ss-modules": [
+        "dist/ss-modules/ss-modules",
+        "dist/ss-modules"
+      ],
       "ss-products": [
         "dist/ss-products/ss-products",
         "dist/ss-products"

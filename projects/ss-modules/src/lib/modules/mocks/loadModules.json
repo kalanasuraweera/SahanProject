@@ -1,0 +1,25 @@
+{
+  "status": 1,
+  "data": [
+    {
+      "moduleCode": "MOD1",
+      "moduleName": "Module 1"
+    },
+    {
+      "moduleCode": "MOD2",
+      "moduleName": "Module 2"
+    },
+    {
+      "moduleCode": "MOD3",
+      "moduleName": "Module 3"
+    },
+    {
+      "moduleCode": "MOD4",
+      "moduleName": "Module 4"
+    },
+    {
+      "moduleCode": "MOD5",
+      "moduleName": "Module 5"
+    }
+  ]
+}
