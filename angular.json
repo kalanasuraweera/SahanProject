@@ -200,6 +200,46 @@
           }
         }
       }
+    },
+    "ss-root-cause": {
+      "projectType": "library",
+      "root": "projects/ss-root-cause",
+      "sourceRoot": "projects/ss-root-cause/src",
+      "prefix": "ss",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ss-root-cause/tsconfig.lib.json",
+            "project": "projects/ss-root-cause/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ss-root-cause/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ss-root-cause/src/test.ts",
+            "tsConfig": "projects/ss-root-cause/tsconfig.spec.json",
+            "karmaConfig": "projects/ss-root-cause/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ss-root-cause/tsconfig.lib.json",
+              "projects/ss-root-cause/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "SahanProject"

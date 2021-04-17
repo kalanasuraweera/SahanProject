@@ -1,0 +1,25 @@
+{
+  "status": 1,
+  "data": [
+    {
+      "rootCauseCode": "MACH",
+      "rootCauseName": "Machine"
+    },
+    {
+      "rootCauseCode": "MAN",
+      "rootCauseName": "Man power"
+    },
+    {
+      "rootCauseCode": "MAT",
+      "rootCauseName": "Material"
+    },
+    {
+      "rootCauseCode": "MEAS",
+      "rootCauseName": "Measurement"
+    },
+    {
+      "rootCauseCode": "METH",
+      "rootCauseName": "Method"
+    }
+  ]
+}

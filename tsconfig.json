@@ -17,6 +17,10 @@
         "dist/ss-products/ss-products",
         "dist/ss-products"
       ],
+      "ss-root-cause": [
+        "dist/ss-root-cause/ss-root-cause",
+        "dist/ss-root-cause"
+      ],
       "ss-teams": [
         "dist/ss-teams/ss-teams",
         "dist/ss-teams"

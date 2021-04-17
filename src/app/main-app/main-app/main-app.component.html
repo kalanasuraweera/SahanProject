@@ -82,5 +82,8 @@
     <ng-container *ngIf="(selectedModule | async) == MODULE_TYPE.TEAMS">
       <ss-teams></ss-teams>
     </ng-container>
+    <ng-container *ngIf="(selectedModule | async) == MODULE_TYPE.ROOT_CAUSES">
+      <ss-root-causes></ss-root-causes>
+    </ng-container>
   </mat-sidenav-content>
 </mat-sidenav-container>
