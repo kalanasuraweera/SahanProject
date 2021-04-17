@@ -1,0 +1,25 @@
+{
+  "status": 1,
+  "data": [
+    {
+      "teamCode": "APX",
+      "teamName": "Apex"
+    },
+    {
+      "teamCode": "CST",
+      "teamName": "Castle"
+    },
+    {
+      "teamCode": "KOD",
+      "teamName": "Kodiak"
+    },
+    {
+      "teamCode": "ALP",
+      "teamName": "Alpha"
+    },
+    {
+      "teamCode": "BET",
+      "teamName": "Beta"
+    }
+  ]
+}

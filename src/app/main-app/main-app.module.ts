@@ -6,6 +6,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {SsProductsModule} from '../../../projects/ss-products/src/lib/ss-products.module';
+import {SsTeamsModule} from '../../../projects/ss-teams/src/lib/ss-teams.module';
 
 
 
@@ -19,7 +20,8 @@ import {SsProductsModule} from '../../../projects/ss-products/src/lib/ss-product
     MatSidenavModule,
     MatExpansionModule,
     MatToolbarModule,
-    SsProductsModule
+    SsProductsModule,
+    SsTeamsModule
   ]
 })
 export class MainAppModule { }

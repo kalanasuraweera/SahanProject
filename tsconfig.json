@@ -16,6 +16,10 @@
       "ss-products": [
         "dist/ss-products/ss-products",
         "dist/ss-products"
+      ],
+      "ss-teams": [
+        "dist/ss-teams/ss-teams",
+        "dist/ss-teams"
       ]
     },
     "lib": [

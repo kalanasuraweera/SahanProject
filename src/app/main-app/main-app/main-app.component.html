@@ -79,5 +79,8 @@
     <ng-container *ngIf="(selectedModule | async) == MODULE_TYPE.PRODUCTS">
       <ss-ss-products></ss-ss-products>
     </ng-container>
+    <ng-container *ngIf="(selectedModule | async) == MODULE_TYPE.TEAMS">
+      <ss-teams></ss-teams>
+    </ng-container>
   </mat-sidenav-content>
 </mat-sidenav-container>
