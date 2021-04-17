@@ -58,10 +58,6 @@
           Causes
         </mat-panel-description>
         <mat-panel-description class="clickable"
-                               [ngClass]="{'mat-menu-item mat-menu-item-highlighted': (selectedModule | async) == MODULE_TYPE.REASONS }"
-                               (click)="handleModuleTypeSelection(MODULE_TYPE.REASONS)">Reasons
-        </mat-panel-description>
-        <mat-panel-description class="clickable"
                                [ngClass]="{'mat-menu-item mat-menu-item-highlighted': (selectedModule | async) == MODULE_TYPE.TEAM_MEMBER_ALLOCATIONS }"
                                (click)="handleModuleTypeSelection(MODULE_TYPE.TEAM_MEMBER_ALLOCATIONS)">Team Member
           Allocations
