@@ -11,11 +11,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {CommonModule} from '@angular/common';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import { AddTeamMemberAllocationComponent } from './add-team-member-allocation/add-team-member-allocation.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
   declarations: [
-    TeamMemberAllocationsComponent
+    TeamMemberAllocationsComponent,
+    AddTeamMemberAllocationComponent
   ],
   imports: [
     SsTeamMembersModule,
@@ -28,7 +31,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatButtonModule,
     CommonModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSelectModule
   ],
   exports: [
     TeamMemberAllocationsComponent

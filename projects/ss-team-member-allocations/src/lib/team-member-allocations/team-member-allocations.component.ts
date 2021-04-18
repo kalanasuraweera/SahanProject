@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {SsTeamMembersService} from 'ss-team-members';
 import {SsTeamMemberAllocationsService} from '../ss-team-member-allocations.service';
 import {FormControl, Validators} from '@angular/forms';
 import {TeamMemberAllocations} from '../team-member-allocations.model';
+import {AddTeamMemberAllocationComponent} from '../add-team-member-allocation/add-team-member-allocation.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'ss-team-member-allocations',
@@ -16,7 +17,7 @@ export class TeamMemberAllocationsComponent implements OnInit {
   searchResults: TeamMemberAllocations[];
   displayedColumns: string[] = ['date', 'teamName', 'members'];
 
-  constructor(private ssTeamMemberAllocationService: SsTeamMemberAllocationsService) {
+  constructor(private ssTeamMemberAllocationService: SsTeamMemberAllocationsService, private dialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -35,5 +36,11 @@ export class TeamMemberAllocationsComponent implements OnInit {
     if (this.date.valid) {
       this.performSearch();
     }
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(AddTeamMemberAllocationComponent, {
+      width: '400px'
+    });
   }
 }

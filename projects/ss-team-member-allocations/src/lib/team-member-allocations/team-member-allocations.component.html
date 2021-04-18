@@ -11,7 +11,7 @@
 <!--    <mat-label>EPF</mat-label>-->
 <!--    <input matInput (blur)="transform()" [formControl]="epf">-->
 <!--  </mat-form-field>-->
-<button mat-button (click)="startSearch()">Search</button>
+<button mat-button class="mat-raised-button" (click)="startSearch()">Search</button>
 <table *ngIf="searchResults?.length > 0" mat-table [dataSource]="searchResults" class="mat-elevation-z10 main-table">
   <ng-container matColumnDef="date">
     <th mat-header-cell *matHeaderCellDef>Date</th>
@@ -35,3 +35,7 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+<div class="module-btn">
+  <button class="mat-raised-button" mat-button (click)="openDialog()">Add New</button>
+</div>
