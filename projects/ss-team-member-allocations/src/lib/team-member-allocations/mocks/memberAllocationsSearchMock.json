@@ -1,0 +1,43 @@
+{
+  "status": 1,
+  "data": [
+    {
+      "date": "2021-06-23",
+      "team": {
+        "teamCode": "APX",
+        "teamName": "Apex"
+      },
+      "members": [
+        {
+          "memberName": "Sahan",
+          "EPF": 120.00
+        },
+        {
+          "memberName": "Kalana",
+          "EPF": 110.00
+        }
+      ]
+    },
+    {
+      "date": "2021-06-23",
+      "team": {
+        "teamCode": "CST",
+        "teamName": "Castle"
+      },
+      "members": [
+        {
+          "memberName": "Jagath",
+          "EPF": 45.00
+        },
+        {
+          "memberName": "Suneth",
+          "EPF": 12.00
+        },
+        {
+          "memberName": "Kasun",
+          "EPF": 90.00
+        }
+      ]
+    }
+  ]
+}

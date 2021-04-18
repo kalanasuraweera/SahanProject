@@ -10,6 +10,7 @@ import {SsTeamsModule} from '../../../projects/ss-teams/src/lib/ss-teams.module'
 import {SsRootCauseModule} from '../../../projects/ss-root-cause/src/lib/ss-root-cause.module';
 import {SsTeamMembersModule} from '../../../projects/ss-team-members/src/lib/ss-team-members.module';
 import {SsModulesModule} from '../../../projects/ss-modules/src/lib/ss-modules.module';
+import {SsTeamMemberAllocationsModule} from '../../../projects/ss-team-member-allocations/src/lib/ss-team-member-allocations.module';
 
 
 
@@ -27,7 +28,8 @@ import {SsModulesModule} from '../../../projects/ss-modules/src/lib/ss-modules.m
     SsTeamsModule,
     SsRootCauseModule,
     SsTeamMembersModule,
-    SsModulesModule
+    SsModulesModule,
+    SsTeamMemberAllocationsModule
   ]
 })
 export class MainAppModule { }

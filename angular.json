@@ -320,6 +320,46 @@
           }
         }
       }
+    },
+    "ss-team-member-allocations": {
+      "projectType": "library",
+      "root": "projects/ss-team-member-allocations",
+      "sourceRoot": "projects/ss-team-member-allocations/src",
+      "prefix": "ss",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ss-team-member-allocations/tsconfig.lib.json",
+            "project": "projects/ss-team-member-allocations/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ss-team-member-allocations/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ss-team-member-allocations/src/test.ts",
+            "tsConfig": "projects/ss-team-member-allocations/tsconfig.spec.json",
+            "karmaConfig": "projects/ss-team-member-allocations/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ss-team-member-allocations/tsconfig.lib.json",
+              "projects/ss-team-member-allocations/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "SahanProject"

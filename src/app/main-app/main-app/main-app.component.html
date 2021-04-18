@@ -87,5 +87,8 @@
     <ng-container *ngIf="(selectedModule | async) == MODULE_TYPE.MODULES">
       <ss-modules></ss-modules>
     </ng-container>
+    <ng-container *ngIf="(selectedModule | async) == MODULE_TYPE.TEAM_MEMBER_ALLOCATIONS">
+      <ss-team-member-allocations></ss-team-member-allocations>
+    </ng-container>
   </mat-sidenav-content>
 </mat-sidenav-container>
